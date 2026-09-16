@@ -110,7 +110,7 @@ WHERE name LIKE '%e%');*/
 --List all aircraft that have never been chartered using a subquery.
 SELECT ac_number
 FROM aircraft
-WHERE product_id NOT IN    
+WHERE ac_number NOT IN    
 	(SELECT ac_number 
 	 FROM charter)
 ORDER BY ac_number;
